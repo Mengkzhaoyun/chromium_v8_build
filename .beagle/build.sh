@@ -9,7 +9,8 @@ deb [trusted=yes] http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-backports ma
 deb [trusted=yes] http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-security main restricted universe multiverse
 EOF
 
-GNUTLS_CPUID_OVERRIDE=0x1 apt update 
+export GNUTLS_CPUID_OVERRIDE=0x1 
+apt update 
 apt install apt-transport-https ca-certificates -y
 
 cat > /etc/apt/sources.list << EOF 
