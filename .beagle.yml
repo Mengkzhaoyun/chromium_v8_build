@@ -27,7 +27,7 @@ steps:
         path: /var/run/docker.sock
     settings:
       dockerfile: .beagle/dockerfile
-      base: registry.cn-qingdao.aliyuncs.com/wod/ubuntu:20.04-amd64
+      base: registry.cn-qingdao.aliyuncs.com/wod/ubuntu:v20.04-amd64
       repo: wod/chromium-v8-build
       version: v9.7
       channel: amd64
@@ -45,7 +45,7 @@ steps:
         path: /var/run/docker.sock
     settings:
       dockerfile: .beagle/dockerfile
-      base: registry.cn-qingdao.aliyuncs.com/wod/ubuntu:20.04-arm64
+      base: registry.cn-qingdao.aliyuncs.com/wod/ubuntu:v20.04-arm64
       repo: wod/chromium-v8-build
       version: v9.7
       channel: arm64
